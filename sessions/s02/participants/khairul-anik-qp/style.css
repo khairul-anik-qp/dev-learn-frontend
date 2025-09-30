@@ -84,15 +84,16 @@ h2+p {
 }
 
 /* Task 9 */
-.step {
+.steps {
     counter-reset: step;
+    list-style: none;
 }
 
-.step li {
+.steps li {
     counter-increment: step;
 }
 
-.step li::before {
+.step::before {
     content: counter(step) ". ";
     font-weight: bold;
 }
